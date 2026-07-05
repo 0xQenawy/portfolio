@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===================== SEO ===================== -->
+  <!-- TODO: Replace YOUR_NAME with your full name throughout this file -->
+  <title>Abdelrahman Gamal — Product Owner, Product Manager &amp; Business Analyst</title>
+  <meta name="description" content="Portfolio of Abdelrahman Gamal — Product Owner and Business Analyst turning ideas into shippable products. Specializing in Product Strategy, Agile leadership, Requirements Gathering, and Secure Product Design." />
+  <meta name="keywords" content="Product Owner, Product Manager, Business Analyst, Business Analysis, Product Management, Product Strategy, Product Discovery, Requirements Gathering, Agile, Scrum, Cybersecurity, Software Architecture, Egypt, MENA" />
+  <meta name="author" content="Abdelrahman Gamal" />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- Canonical URL -->
+  <!-- TODO: Update canonical URL below after deploying to GitHub Pages to point to your live site domain/path -->
+  <link rel="canonical" href="https://YOUR_GITHUB_USERNAME.github.io/portfolio/" />
+
+  <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Abdelrahman Gamal Portfolio" />
+  <meta property="og:title" content="Abdelrahman Gamal — Product Owner, Product Manager &amp; Business Analyst" />
+  <meta property="og:description" content="Portfolio of Abdelrahman Gamal — Product Owner and Business Analyst turning ideas into shippable products. Specializing in Product Strategy, Agile leadership, Requirements Gathering, and Secure Product Design." />
+  <!-- TODO: Update og:url below after deploying -->
+  <meta property="og:url" content="https://YOUR_GITHUB_USERNAME.github.io/portfolio/" />
+  <!-- TODO: Update og:image below after deploying. Create an og-image.png (1200x630) with alt text and place in assets/ -->
+  <meta property="og:image" content="https://YOUR_GITHUB_USERNAME.github.io/portfolio/assets/og-image.png" />
+  <meta property="og:image:alt" content="Abdelrahman Gamal - Product Owner &amp; Business Analyst Portfolio Preview Image" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- TODO: Add your Twitter handle below if applicable, e.g., @yourhandle -->
+  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE" />
+  <meta name="twitter:creator" content="@YOUR_TWITTER_HANDLE" />
+  <meta name="twitter:title" content="Abdelrahman Gamal — Product Owner, Product Manager &amp; Business Analyst" />
+  <meta name="twitter:description" content="Product Owner and Business Analyst turning ideas into shippable products. Specializing in Product Strategy, Agile leadership, Requirements Gathering, and Secure Product Design." />
+  <!-- TODO: Update twitter:image below after deploying -->
+  <meta name="twitter:image" content="https://YOUR_GITHUB_USERNAME.github.io/portfolio/assets/og-image.png" />
+  <meta name="twitter:image:alt" content="Abdelrahman Gamal - Product Owner &amp; Business Analyst Portfolio Preview Image" />
+
+  <!-- Favicon -->
+  <!-- TODO: Add a favicon.ico (fallback) and apple-touch-icon.png in the assets/ folder for broader device support -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+
+  <!-- Structured Data (JSON-LD Person Schema) -->
+  <!-- TODO: Update all URLs in this JSON-LD schema (url, sameAs, etc.) with your actual links -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Abdelrahman Gamal",
+    "jobTitle": "Product Owner & Business Analyst",
+    "url": "https://YOUR_GITHUB_USERNAME.github.io/portfolio/",
+    "sameAs": [
+      "https://linkedin.com/in/YOUR_LINKEDIN",
+      "https://github.com/YOUR_GITHUB"
+    ],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Your University Name"
+    },
+    "knowsAbout": ["Product Management", "Business Analysis", "Product Strategy", "Agile", "Scrum", "Cybersecurity", "Software Architecture"]
+  }
+  </script>
+
+  <!-- Fonts: Inter (primary) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ===================== SCROLL PROGRESS BAR ===================== -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="#home" class="nav__logo" aria-label="Home">A<span>.</span>G</a>
+
+      <button
+        class="nav__toggle"
+        id="nav-toggle"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav__links" id="nav-menu" role="menubar">
+        <li role="none"><a href="#home" class="nav__link active" role="menuitem">Home</a></li>
+        <li role="none"><a href="#about" class="nav__link" role="menuitem">About</a></li>
+        <li role="none"><a href="#experience" class="nav__link" role="menuitem">Experience</a></li>
+        <li role="none"><a href="#skills" class="nav__link" role="menuitem">Skills</a></li>
+        <li role="none"><a href="#projects" class="nav__link" role="menuitem">Projects</a></li>
+        <li role="none"><a href="#contact" class="nav__link" role="menuitem">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main-content">
+  <!-- ===================== HERO ===================== -->
+  <section id="home" class="hero section">
+    <div class="hero__content">
+      <p class="hero__greeting">Hi, I'm</p>
+      <h1 class="hero__name">Abdelrahman Gamal</h1>
+      <p class="hero__tagline">
+        <strong>Product Owner | Business Analyst </strong> | Bridging Business Analysis, Product Strategy, and Engineering
+      </p>
+
+      <div class="hero__actions">
+        <!-- TODO: Replace # with the actual path to your CV file in assets/ -->
+        <a href="assets/Abdelrahman_Gamal_CV.pdf" class="btn btn--primary" download aria-label="Download CV">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16l-5-5h3V4h4v7h3l-5 5zm-7 4h14v-2H5v2z"/></svg>
+          Download CV
+        </a>
+        <a href="#projects" class="btn btn--outline" aria-label="View Projects">
+          View Projects
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <div class="hero__socials">
+        <!-- TODO: Replace # with your actual LinkedIn URL -->
+        <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+          <svg class="lucide lucide-linkedin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <!-- TODO: Replace # with your actual GitHub URL -->
+        <a href="https://github.com/YOUR_GITHUB" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+          <svg class="lucide lucide-github" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" class="section section--alt">
+    <div class="section__inner">
+      <span class="section__label reveal">About Me</span>
+      <h2 class="section__title reveal">Bridging Engineering &amp; Product Strategy</h2>
+      <p class="section__subtitle reveal">
+        An engineering mind with a product heart — translating business goals into outcomes that ship.
+      </p>
+
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <p>
+            I have a strong technical foundation in <strong>Cybersecurity, Networking, Web Technologies, and Software Engineering</strong>. I intentionally transitioned toward <strong>Product Ownership and Business Analysis</strong> because I became more interested in understanding <em>why</em> products succeed, not only how they are built.
+          </p>
+          <p>
+            During my <strong>Product Owner internship at Zikola Agency</strong>, I strengthened my experience in Requirements Gathering, Business Analysis, and Agile product workflows. I developed hands-on expertise in writing PRDs and SRS documents, defining User Stories and Acceptance Criteria, and driving stakeholder communication.
+          </p>
+          <p>
+            This dual perspective allows me to bridge Business, Product, and Engineering. My technical background enables me to communicate naturally with engineering teams, understand APIs and software architecture, evaluate technical trade-offs, and inherently consider security and scalability during product planning.
+          </p>
+        </div>
+
+        <div class="about__highlights reveal-group">
+          <!-- Highlight 1 -->
+          <div class="about__highlight-item reveal">
+            <div class="about__highlight-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <div>
+              <p class="about__highlight-title">Product Thinking</p>
+              <p class="about__highlight-desc">Product Discovery, prioritization, MVP definition, Product Strategy, User Stories, roadmap planning, and Cross-functional Collaboration.</p>
+            </div>
+          </div>
+
+          <!-- Highlight 2 -->
+          <div class="about__highlight-item reveal">
+            <div class="about__highlight-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M9 12h6m-3-3v6m9-10a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <p class="about__highlight-title">Business Analysis</p>
+              <p class="about__highlight-desc">Requirements Gathering, process analysis, stakeholder communication, PRD &amp; SRS documentation, Acceptance Criteria, and translating business needs into actionable product requirements.</p>
+            </div>
+          </div>
+
+          <!-- Highlight 3 -->
+          <div class="about__highlight-item reveal">
+            <div class="about__highlight-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <p class="about__highlight-title">Technical Foundation</p>
+              <p class="about__highlight-desc">Strong foundation in Cybersecurity, Networking, Software Engineering, APIs, Secure Product Design, and Software Architecture, enabling effective collaboration with development teams and informed technical decision-making.</p>
+            </div>
+          </div>
+
+          <!-- Highlight 4 -->
+          <div class="about__highlight-item reveal">
+            <div class="about__highlight-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+            </div>
+            <div>
+              <p class="about__highlight-title">MENA Market Awareness</p>
+              <p class="about__highlight-desc">Based in Egypt with an understanding of regional market dynamics and digital product opportunities across the MENA region. Open to Remote and Hybrid opportunities globally.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <section id="experience" class="section">
+    <div class="section__inner">
+      <span class="section__label reveal">Experience</span>
+      <h2 class="section__title reveal">Where I've Made an Impact</h2>
+      <p class="section__subtitle reveal">
+        Real-world product ownership across agency and academic environments.
+      </p>
+
+      <div class="timeline reveal-group">
+        <!-- Experience 1 — Primary -->
+        <div class="timeline__item reveal">
+          <p class="timeline__date">May 2025 – Present</p>
+          <h3 class="timeline__role">
+            <div class="brand-logo-wrapper timeline__role-logo">
+              <img src="assets/logos/Zikola.svg" alt="Zikola Agency Logo" />
+            </div>
+            Product Owner Intern
+          </h3>
+          <p class="timeline__company">Zikola Agency</p>
+          <ul class="timeline__bullets">
+            <li>Led Business Analysis activities including Requirements Gathering, stakeholder communication, and process mapping to clearly document product requirements (PRD / SRS).</li>
+            <li>Translated business requirements into actionable User Stories and Acceptance Criteria to guide development sprints and QA validation.</li>
+            <li>Collaborated with cross-functional teams and participated in product reviews, ensuring that deliverables aligned with Product Strategy, business objectives, and user needs.</li>
+          </ul>
+        </div>
+
+        <!-- Experience 2 — Secondary -->
+        <div class="timeline__item timeline__item--secondary reveal">
+          <p class="timeline__date">Graduation Project</p>
+          <h3 class="timeline__role">Team Lead &amp; Product Owner</h3>
+          <p class="timeline__company">Technical Talent Assessment Platform</p>
+          <ul class="timeline__bullets">
+            <li>Managed a prioritized product backlog and facilitated Agile and Scrum ceremonies (sprint planning, team syncs) for a cross-functional development team.</li>
+            <li>Defined MVP scope through Product Discovery, balancing technical feasibility with user value to deliver a viable first release.</li>
+            <li>Designed secure code-execution workflows utilizing Secure Product Design principles, ensuring candidate evaluation over rote memorization.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EDUCATION ===================== -->
+  <section id="education" class="section section--alt">
+    <div class="section__inner">
+      <span class="section__label reveal">Education</span>
+      <h2 class="section__title reveal">Academic Foundation</h2>
+
+      <div class="education-card reveal">
+        <div class="brand-logo-wrapper education-card__brand" aria-hidden="true" aria-label="Mansoura University">
+          <img src="assets/logos/Mansoura University logo.svg" alt="Mansoura University Official Logo" />
+        </div>
+        <div>
+          <!-- TODO: Replace with your actual university name -->
+          <p class="education-card__degree">B.Sc. Communications &amp; Computer Engineering</p>
+          <p class="education-card__school">Mansoura University</p>
+          <!-- TODO: Update expected graduation date -->
+          <p class="education-card__date">Expected Graduation: 2026</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section id="skills" class="section">
+    <div class="section__inner">
+      <span class="section__label reveal">Skills</span>
+      <h2 class="section__title reveal">What I Bring to the Table</h2>
+      <p class="section__subtitle reveal">
+        A blend of product craft, Agile methodology, and the tools to get things done.
+      </p>
+
+      <div class="reveal-group">
+        <!-- Product Management -->
+        <div class="skills__group reveal">
+          <h3 class="skills__group-title">Product Management</h3>
+          <div class="skills__pills">
+            <span class="skill-pill">Product Discovery</span>
+            <span class="skill-pill">Product Strategy</span>
+            <span class="skill-pill">Backlog Management</span>
+            <span class="skill-pill">MVP Definition</span>
+            <span class="skill-pill">User Stories</span>
+            <span class="skill-pill">Acceptance Criteria</span>
+            <span class="skill-pill">Product Roadmapping</span>
+          </div>
+        </div>
+
+        <!-- Business Analysis -->
+        <div class="skills__group reveal">
+          <h3 class="skills__group-title">Business Analysis</h3>
+          <div class="skills__pills">
+            <span class="skill-pill"><svg class="skill-pill__icon lucide lucide-clipboard-list" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4"/><path d="M12 16h4"/><path d="M8 11h.01"/><path d="M8 16h.01"/></svg> Requirement Gathering</span>
+            <span class="skill-pill"><svg class="skill-pill__icon lucide lucide-git-merge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M6 21V9a9 9 0 0 0 9 9"/></svg> Process Analysis</span>
+            <span class="skill-pill"><svg class="skill-pill__icon lucide lucide-map" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" x2="9" y1="3" y2="18"/><line x1="15" x2="15" y1="6" y2="21"/></svg> Use Case Mapping</span>
+            <span class="skill-pill"><svg class="skill-pill__icon lucide lucide-workflow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="8" x="3" y="3" rx="2"/><path d="M7 11v4a2 2 0 0 0 2 2h4"/><rect width="8" height="8" x="13" y="13" rx="2"/></svg> Business Process Flows</span>
+            <span class="skill-pill"><svg class="skill-pill__icon lucide lucide-file-check-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h14a2 2 0 0 0 2-2V7.5L14.5 2H6a2 2 0 0 0-2 2v4"/><path d="M14 2v6h6"/><path d="m3 15 2 2 4-4"/></svg> Functional Requirements</span>
+            <span class="skill-pill"><svg class="skill-pill__icon lucide lucide-file-cog" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="m14 2 6 6"/><path d="M4.5 21a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9.5"/><path d="m15.6 15.6.8-.8"/><path d="m12 12-.8.8"/><path d="m15.6 9.2.8.8"/><path d="m12 15.6-.8-.8"/><path d="m17 12h1.2"/><path d="M9.4 12H8.2"/><path d="M12.6 9.4V8.2"/><path d="M12.6 15.8v1.2"/><circle cx="12" cy="12.4" r="1.6"/></svg> Non-functional Requirements</span>
+            <span class="skill-pill"><svg class="skill-pill__icon lucide lucide-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> Stakeholder Management</span>
+            <span class="skill-pill"><svg class="skill-pill__icon lucide lucide-table-properties" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3v18"/><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M21 9H3"/><path d="M21 15H3"/></svg> Traceability Matrix</span>
+          </div>
+        </div>
+
+        <!-- Technical Foundation -->
+        <div class="skills__group reveal">
+          <h3 class="skills__group-title">Technical Foundation</h3>
+          <div class="skills__pills">
+            <span class="skill-pill"><svg class="skill-pill__icon lucide lucide-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-label="Cybersecurity"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg> Cybersecurity Fundamentals</span>
+            <span class="skill-pill"><svg class="skill-pill__icon lucide lucide-network" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-label="Networking"><rect x="16" y="16" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="9" y="2" width="6" height="6" rx="1"/><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"/><path d="M12 12V8"/></svg> Networking</span>
+            <span class="skill-pill"><svg class="skill-pill__icon lucide lucide-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-label="Software Architecture"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 12 12 17 22 12"/><polyline points="2 17 12 22 22 17"/></svg> Software Architecture</span>
+            <span class="skill-pill"><svg class="skill-pill__icon lucide lucide-webhook" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-label="APIs"><path d="M18 16.98h-5.99c-1.1 0-1.95.94-2.48 1.9A4 4 0 0 1 2 17c.01-.7.2-1.4.57-2"/><path d="m6 17 3.13-5.78c.53-.97.1-2.18-.5-3.1a4 4 0 1 1 6.89-4.06"/><path d="m12 6 3.13 5.73C15.66 12.7 16.9 13 18 13a4 4 0 0 1 0 8"/></svg> APIs</span>
+            <span class="skill-pill"><svg class="skill-pill__icon lucide lucide-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Secure Product Design</span>
+            <span class="skill-pill"><svg class="skill-pill__icon lucide lucide-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> SDLC</span>
+          </div>
+        </div>
+
+        <!-- Methodologies -->
+        <div class="skills__group reveal">
+          <h3 class="skills__group-title">Methodologies</h3>
+          <div class="skills__pills">
+            <span class="skill-pill"><svg class="skill-pill__icon lucide lucide-git-branch" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-label="Agile"><line x1="6" x2="6" y1="3" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg> Agile</span>
+            <span class="skill-pill"><svg class="skill-pill__icon lucide lucide-refresh-cw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-label="Scrum"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg> Scrum</span>
+            <span class="skill-pill"><svg class="skill-pill__icon lucide lucide-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> Cross-functional Collaboration</span>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skills__group reveal">
+          <h3 class="skills__group-title">Tools</h3>
+          <div class="skills__pills">
+            <span class="skill-pill"><svg class="skill-pill__icon lucide lucide-figma" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-label="Figma"><path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"/><path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"/><path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"/><path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"/><path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"/></svg> Figma</span>
+            <span class="skill-pill"><svg class="skill-pill__icon lucide lucide-notebook" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-label="Notion"><path d="M2 6h4"/><path d="M2 10h4"/><path d="M2 14h4"/><path d="M2 18h4"/><rect width="16" height="20" x="4" y="2" rx="2"/></svg> Notion</span>
+            <span class="skill-pill"><svg class="skill-pill__icon lucide lucide-boxes" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-label="Miro"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42z"/><path d="m7 16.5-4.74-2.85"/><path d="m7 16.5 5-3"/><path d="M7 16.5v5.17"/><path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3z"/><path d="m17 16.5-5-3"/><path d="m17 16.5 4.74-2.85"/><path d="M17 16.5v5.17"/><path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8z"/><path d="M12 8 7.26 5.15"/><path d="m12 8 4.74-2.85"/><path d="M12 13.5V8"/></svg> Miro</span>
+            <span class="skill-pill"><svg class="skill-pill__icon lucide lucide-layout-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-label="Google Workspace"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg> Google Workspace</span>
+            <span class="skill-pill"><svg class="skill-pill__icon lucide lucide-wand-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-label="Gamma"><path d="m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72Z"/><path d="m14 7 3 3"/><path d="M5 6v4"/><path d="M19 14v4"/><path d="M10 2v2"/><path d="M7 8H3"/><path d="M21 16h-4"/><path d="M11 3H9"/></svg> Gamma</span>
+            <span class="skill-pill"><svg class="skill-pill__icon lucide lucide-bot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg> AI Prompt Engineering</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CERTIFICATIONS ===================== -->
+  <section id="certifications" class="section section--alt">
+    <div class="section__inner">
+      <span class="section__label reveal">Certifications</span>
+      <h2 class="section__title reveal">Verified Credentials</h2>
+
+      <div class="certs__grid reveal-group">
+        <!-- Cert 1 -->
+        <div class="cert-card reveal">
+          <div class="cert-card__header">
+            <div class="brand-logo-wrapper cert-card__brand">
+              <img src="assets/logos/iti.svg" alt="Mahara-Tech Logo" />
+            </div>
+            <p class="cert-card__name">OWASP Top 10: Web Security Fundamentals</p>
+          </div>
+          <p class="cert-card__issuer">Mahara-Tech (ITI Egypt)</p>
+          <p class="cert-card__date">July 2025</p>
+        </div>
+
+        <!-- Cert 2 -->
+        <div class="cert-card reveal">
+          <div class="cert-card__header">
+            <div class="brand-logo-wrapper cert-card__brand">
+              <img src="assets/logos/helsinki.svg" alt="University of Helsinki Logo" />
+            </div>
+            <div class="brand-logo-wrapper cert-card__brand" style="margin-left: -8px;">
+              <img src="assets/logos/minnalearn.svg" alt="MinnaLearn Logo" />
+            </div>
+            <p class="cert-card__name">Elements of AI for Business</p>
+          </div>
+          <p class="cert-card__issuer">University of Helsinki &amp; MinnaLearn</p>
+          <p class="cert-card__date">August 2025</p>
+        </div>
+
+        <!-- Cert 3 -->
+        <div class="cert-card reveal">
+          <div class="cert-card__header">
+            <div class="brand-logo-wrapper cert-card__brand">
+              <img src="assets/logos/ibm.svg" alt="IBM Official Logo" />
+            </div>
+            <div class="brand-logo-wrapper cert-card__brand" style="margin-left: -8px;">
+              <img src="assets/logos/coursera.svg" alt="Coursera Logo" />
+            </div>
+            <p class="cert-card__name">Delivering Quality Work with Agility</p>
+          </div>
+          <p class="cert-card__issuer">IBM (Coursera)</p>
+          <p class="cert-card__date">September 2025</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== HIGHLIGHTS (replaces metrics) ===================== -->
+  <section id="highlights" class="section">
+    <div class="section__inner">
+      <span class="section__label reveal">Highlights</span>
+      <h2 class="section__title reveal">Key Accomplishments</h2>
+
+      <div class="highlights-strip reveal-group">
+        <div class="highlight-card reveal">
+          Led a Cross-functional Collaboration effort as an Agile Team Lead &amp; Product Owner for a graduation project.
+        </div>
+        <div class="highlight-card reveal">
+          Conducted extensive Business Analysis to translate requirements into full PRD / SRS documentation.
+        </div>
+        <div class="highlight-card reveal">
+          Validated a startup concept through Product Discovery and structured buyer role-play with industry stakeholders.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section id="projects" class="section section--alt">
+    <div class="section__inner">
+      <span class="section__label reveal">Projects</span>
+      <h2 class="section__title reveal">Things I've Built &amp; Led</h2>
+      <p class="section__subtitle reveal">
+        From product strategy to hands-on execution — each project reflects a different facet of product thinking.
+      </p>
+
+      <div class="projects__grid reveal-group">
+
+        <!-- -------- Project 1: AI Assessment Platform (Flagship) -------- -->
+        <article class="project-card project-card--flagship reveal" id="project-assessment">
+          <div class="project-card__visual">
+            <span class="project-card__visual-icon" aria-hidden="true">🧠</span>
+            <span class="project-card__badge">Flagship</span>
+          </div>
+          <div class="project-card__body">
+            <p class="project-card__role">Team Lead &amp; Product Owner</p>
+            <h3 class="project-card__title">AI-Powered Technical Assessment Platform</h3>
+            <p class="project-card__desc">
+              Managed the Product Management backlog and Scrum ceremonies for a cross-functional dev team.
+              Defined MVP scope with a deliberately imperfect AI concept designed
+              to surface genuine candidate understanding over memorized answers.
+            </p>
+
+            <details class="project-card__details">
+              <summary class="project-card__toggle">
+                <span>View Full Breakdown</span>
+                <svg class="project-card__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </summary>
+              <div class="project-card__expanded">
+                <div class="project-card__detail-row">
+                  <span class="project-card__detail-label">Problem</span>
+                  <p>Technical hiring assessments often test memorization over real understanding. Existing platforms reward pattern-matching and rehearsed answers rather than surfacing genuine problem-solving ability.</p>
+                </div>
+                <div class="project-card__detail-row">
+                  <span class="project-card__detail-label">Solution</span>
+                  <p>Built an AI-powered assessment platform focusing on Secure Product Design and scalable Software Architecture. The platform generates slightly flawed code so candidates must demonstrate genuine understanding to correct issues.</p>
+                </div>
+                <div class="project-card__detail-row">
+                  <span class="project-card__detail-label">Product Decision</span>
+                  <p>Guided by Product Discovery and structured buyer role-play with HR managers. Chose a GTM strategy of pay-per-assessment → subscription, launching in Egypt with Gulf expansion path.</p>
+                </div>
+                <div class="project-card__detail-row">
+                  <span class="project-card__detail-label">Role</span>
+                  <p>Team Lead &amp; Product Owner — managed prioritized backlog, facilitated Agile and Scrum ceremonies, and drove the Product Strategy balancing technical feasibility with user value.</p>
+                </div>
+                <div class="project-card__detail-row">
+                  <span class="project-card__detail-label">Outcome</span>
+                  <p>Working graduation project with validated market interest. Buyer role-play confirmed willingness to pay among target personas.</p>
+                </div>
+              </div>
+            </details>
+
+            <div class="project-card__tags">
+              <span class="project-card__tag">Product Strategy</span>
+              <span class="project-card__tag">Agile</span>
+              <span class="project-card__tag">User Validation</span>
+              <span class="project-card__tag">GTM Planning</span>
+            </div>
+            <div class="project-card__actions">
+              <!-- TODO: Replace mailto with your actual email -->
+              <a href="mailto:YOUR_EMAIL@example.com?subject=AI%20Assessment%20Platform%20—%20Presentation%20Request" class="btn btn--primary btn--small">
+                Request Full Presentation
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- -------- Project 2: Sakn -------- -->
+        <article class="project-card reveal" id="project-sakn">
+          <div class="project-card__visual">
+            <span class="project-card__visual-icon" aria-hidden="true">🏠</span>
+          </div>
+          <div class="project-card__body">
+            <p class="project-card__role">Business Analyst &amp; Product Contributor</p>
+            <h3 class="project-card__title">Sakn</h3>
+            <p class="project-card__desc">
+              <!-- TODO: Add your actual Sakn project description here -->
+              A property/housing solution addressing real pain points in the Egyptian rental and housing market.
+            </p>
+
+            <details class="project-card__details">
+              <summary class="project-card__toggle">
+                <span>View Full Breakdown</span>
+                <svg class="project-card__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </summary>
+              <div class="project-card__expanded">
+                <div class="project-card__detail-row">
+                  <span class="project-card__detail-label">Problem</span>
+                  <!-- TODO: Add your actual problem statement for Sakn -->
+                  <p>The Egyptian rental and housing market lacks transparency and structure, making it difficult for tenants and landlords to find trustworthy matches.</p>
+                </div>
+                <div class="project-card__detail-row">
+                  <span class="project-card__detail-label">Solution</span>
+                  <!-- TODO: Add your actual solution description for Sakn -->
+                  <p>A structured property platform that addresses key pain points in the MENA housing market through better matching and verified listings.</p>
+                </div>
+                <div class="project-card__detail-row">
+                  <span class="project-card__detail-label">Product Decision</span>
+                  <!-- TODO: Add your actual product decision for Sakn -->
+                  <p>Focused on rigorous Business Analysis and PRD/SRS documentation as a case study — translating complex business requirements into structured Product Management artifacts.</p>
+                </div>
+                <div class="project-card__detail-row">
+                  <span class="project-card__detail-label">Role</span>
+                  <p>Business Analyst &amp; Product Contributor — responsible for Requirements Gathering (PRD / SRS) and business process flow mapping.</p>
+                </div>
+                <div class="project-card__detail-row">
+                  <span class="project-card__detail-label">Outcome</span>
+                  <!-- TODO: Add your actual outcome for Sakn -->
+                  <p>Complete PRD/SRS documentation delivered as a product case study.</p>
+                </div>
+              </div>
+            </details>
+
+            <div class="project-card__tags">
+              <span class="project-card__tag">PropTech</span>
+              <span class="project-card__tag">PRD / SRS</span>
+              <span class="project-card__tag">User Research</span>
+            </div>
+            <div class="project-card__actions">
+              <!-- TODO: Add link to project demo or repo -->
+              <a href="#" class="btn btn--outline btn--small">Learn More</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- -------- Project 3: SecurePass Tools -------- -->
+        <article class="project-card reveal" id="project-securepass">
+          <div class="project-card__visual">
+            <span class="project-card__visual-icon" aria-hidden="true">🔐</span>
+          </div>
+          <div class="project-card__body">
+            <p class="project-card__role">Product Owner &amp; Developer</p>
+            <h3 class="project-card__title">SecurePass Tools</h3>
+            <p class="project-card__desc">
+              A privacy-first password security toolkit with regional (Arabic) context awareness — catching patterns that mainstream checkers miss entirely.
+            </p>
+
+            <details class="project-card__details">
+              <summary class="project-card__toggle">
+                <span>View Full Breakdown</span>
+                <svg class="project-card__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </summary>
+              <div class="project-card__expanded">
+                <div class="project-card__detail-row">
+                  <span class="project-card__detail-label">Problem</span>
+                  <p>Most password-strength checkers ignore regional context — they don't flag common Arabic names/patterns (e.g. "Ahmed", "Mohamed") as weak, which is a real security risk in MENA markets. Many tools also compromise privacy by sending passwords to a server for analysis.</p>
+                </div>
+                <div class="project-card__detail-row">
+                  <span class="project-card__detail-label">Solution</span>
+                  <p>Leveraged Cybersecurity fundamentals and Secure Product Design to build a privacy-first, fully client-side password toolkit with region-aware pattern detection plus a memorable passphrase generator.</p>
+                </div>
+                <div class="project-card__detail-row">
+                  <span class="project-card__detail-label">Product Decision</span>
+                  <p>Chose a zero-server, zero-knowledge architecture — trust by design instead of by policy — even though it meant building more detection logic client-side instead of relying on a backend.</p>
+                </div>
+                <div class="project-card__detail-row">
+                  <span class="project-card__detail-label">Role</span>
+                  <p>Product Owner &amp; Developer — defined the Product Strategy, researched regional password patterns, and led the Software Architecture for the client-side implementation.</p>
+                </div>
+                <div class="project-card__detail-row">
+                  <span class="project-card__detail-label">Outcome</span>
+                  <p>Live, functional product — directly usable in the browser with no installation required.</p>
+                </div>
+              </div>
+            </details>
+
+            <div class="project-card__tags">
+              <span class="project-card__tag">Security</span>
+              <span class="project-card__tag">Privacy-First</span>
+              <span class="project-card__tag">MENA Context</span>
+              <span class="project-card__tag">Client-Side</span>
+            </div>
+            <div class="project-card__actions">
+              <!-- TODO: Replace # with the actual live demo URL -->
+              <a href="#" class="btn btn--primary btn--small" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Try Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- -------- Project 4: Zombie Package Detector -------- -->
+        <article class="project-card reveal" id="project-zombie">
+          <div class="project-card__visual">
+            <span class="project-card__visual-icon" aria-hidden="true">🔍</span>
+          </div>
+          <div class="project-card__body">
+            <p class="project-card__role">Lead Researcher &amp; Developer</p>
+            <h3 class="project-card__title">Zombie Package Detector</h3>
+            <p class="project-card__desc">
+              An automated monitoring tool that tracks dependency health and flags unmaintained packages — product logic applied to a real engineering risk.
+            </p>
+
+            <details class="project-card__details">
+              <summary class="project-card__toggle">
+                <span>View Full Breakdown</span>
+                <svg class="project-card__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </summary>
+              <div class="project-card__expanded">
+                <div class="project-card__detail-row">
+                  <span class="project-card__detail-label">Problem</span>
+                  <p>Third-party dependencies quietly go unmaintained, creating hidden supply-chain risk that teams don't notice until it's too late.</p>
+                </div>
+                <div class="project-card__detail-row">
+                  <span class="project-card__detail-label">Solution</span>
+                  <p>Built an automated monitoring tool applying Cybersecurity best practices to track dependency health and flag unmaintained packages before they become a liability.</p>
+                </div>
+                <div class="project-card__detail-row">
+                  <span class="project-card__detail-label">Product Decision</span>
+                  <p>Prioritized proactive risk detection over reactive fixing — surfacing problems early rather than waiting for incidents to force action, demonstrating strong Product Management.</p>
+                </div>
+                <div class="project-card__detail-row">
+                  <span class="project-card__detail-label">Role</span>
+                  <p>Lead Researcher &amp; Developer — researched supply-chain risk patterns, defined detection heuristics, and built the CLI tool, showcasing a strong technical foundation in Software Architecture.</p>
+                </div>
+                <div class="project-card__detail-row">
+                  <span class="project-card__detail-label">Outcome</span>
+                  <p>Functional CLI tool — demonstrates technical execution combined with product/risk thinking.</p>
+                </div>
+              </div>
+            </details>
+
+            <div class="project-card__tags">
+              <span class="project-card__tag">DevOps Tooling</span>
+              <span class="project-card__tag">Risk Analysis</span>
+              <span class="project-card__tag">Supply Chain</span>
+            </div>
+            <div class="project-card__actions">
+              <!-- TODO: Add link to project repo -->
+              <a href="#" class="btn btn--outline btn--small">View on GitHub</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact" class="section">
+    <div class="section__inner">
+      <div class="contact__inner">
+        <span class="section__label reveal">Contact</span>
+        <h2 class="section__title reveal">Let's Build Something Together</h2>
+        <p class="contact__cta reveal">
+          Open to Product roles — let's talk.
+        </p>
+
+        <div class="contact__links reveal">
+          <!-- TODO: Replace with your actual email -->
+          <a href="mailto:YOUR_EMAIL@example.com" class="btn btn--primary" aria-label="Send email">
+            <svg class="lucide lucide-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            Email Me
+          </a>
+          <!-- TODO: Replace with your actual LinkedIn URL -->
+          <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noopener noreferrer" class="btn btn--outline" aria-label="LinkedIn profile">
+            <svg class="lucide lucide-linkedin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <!-- TODO: Replace with your actual GitHub URL -->
+          <a href="https://github.com/YOUR_GITHUB" target="_blank" rel="noopener noreferrer" class="btn btn--outline" aria-label="GitHub profile">
+            <svg class="lucide lucide-github" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            GitHub
+          </a>
+        </div>
+
+        <p class="contact__location reveal">
+          <svg class="lucide lucide-map-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+          Egypt&ensp;|&ensp;Open to Remote &amp; Hybrid Opportunities
+        </p>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__socials">
+        <!-- TODO: Replace with your actual LinkedIn URL -->
+        <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg class="lucide lucide-linkedin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <!-- TODO: Replace with your actual GitHub URL -->
+        <a href="https://github.com/YOUR_GITHUB" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg class="lucide lucide-github" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+        </a>
+      </div>
+      <p class="footer__copy">&copy; <span id="current-year"></span> Abdelrahman Gamal. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts — loaded at end of body for performance -->
+  <script src="js/script.js"></script>
+</body>
+</html>
