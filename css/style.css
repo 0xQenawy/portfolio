@@ -13,68 +13,74 @@
 /* ---------- CSS Custom Properties (Design Tokens) ---------- */
 :root {
   /* Accent — single source of truth */
-  --accent:            #60a5fa;           /* Electric blue */
-  --accent-light:      #60a5fa;
-  --accent-dark:       #2563eb;
-  --accent-glow:       rgba(96, 165, 250, 0.35);
-  --accent-subtle:     rgba(59, 130, 246, 0.08);
-  --accent-border:     rgba(59, 130, 246, 0.20);
-  
+  --accent: #60a5fa; /* Electric blue */
+  --accent-light: #60a5fa;
+  --accent-dark: #2563eb;
+  --accent-glow: rgba(96, 165, 250, 0.35);
+  --accent-subtle: rgba(59, 130, 246, 0.08);
+  --accent-border: rgba(59, 130, 246, 0.2);
+
   /* Global Gradient Treatment */
-  --accent-gradient:   linear-gradient(135deg, var(--accent), var(--accent-light));
+  --accent-gradient: linear-gradient(
+    135deg,
+    var(--accent),
+    var(--accent-light)
+  );
 
   /* Surfaces */
-  --bg-primary:        #0a0a0a;
-  --bg-secondary:      #111111;
-  --bg-card:           #161616;
-  --bg-card-hover:     #1a1a1a;
-  --bg-nav:            rgba(10, 10, 10, 0.85);
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #111111;
+  --bg-card: #161616;
+  --bg-card-hover: #1a1a1a;
+  --bg-nav: rgba(10, 10, 10, 0.85);
 
   /* Text */
-  --text-primary:      #f0f0f0;
-  --text-secondary:    #a0a0a0;
-  --text-muted:        #666666;
+  --text-primary: #f0f0f0;
+  --text-secondary: #a0a0a0;
+  --text-muted: #666666;
 
   /* Borders */
-  --border:            #1e1e1e;
-  --border-light:      #2a2a2a;
+  --border: #1e1e1e;
+  --border-light: #2a2a2a;
 
   /* Typography */
-  --font-sans:         'Inter', 'Space Grotesk', -apple-system, BlinkMacSystemFont,
-                       'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  --font-mono:         'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+  --font-sans:
+    "Inter", "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", "Consolas", monospace;
 
   /* Spacing scale (4px base) */
-  --space-xs:   0.25rem;   /*  4px */
-  --space-sm:   0.5rem;    /*  8px */
-  --space-md:   1rem;      /* 16px */
-  --space-lg:   1.5rem;    /* 24px */
-  --space-xl:   2rem;      /* 32px */
-  --space-2xl:  3rem;      /* 48px */
-  --space-3xl:  4rem;      /* 64px */
-  --space-4xl:  6rem;      /* 96px */
+  --space-xs: 0.25rem; /*  4px */
+  --space-sm: 0.5rem; /*  8px */
+  --space-md: 1rem; /* 16px */
+  --space-lg: 1.5rem; /* 24px */
+  --space-xl: 2rem; /* 32px */
+  --space-2xl: 3rem; /* 48px */
+  --space-3xl: 4rem; /* 64px */
+  --space-4xl: 6rem; /* 96px */
 
   /* Sizing */
-  --max-width:  1120px;
+  --max-width: 1120px;
   --nav-height: 64px;
 
   /* Radii */
-  --radius-sm:  6px;
-  --radius-md:  10px;
-  --radius-lg:  16px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
   --radius-full: 9999px;
 
   /* Transitions */
-  --ease-out:   cubic-bezier(0.16, 1, 0.3, 1);
-  --duration:   0.3s;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration: 0.3s;
 
   /* Scroll-progress bar */
   --progress-height: 3px;
 }
 
-
 /* ---------- Reset & Base ---------- */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -138,7 +144,6 @@ a:hover {
   border: 0;
 }
 
-
 /* ---------- Scroll Progress Bar ---------- */
 #scroll-progress {
   position: fixed;
@@ -151,7 +156,6 @@ a:hover {
   transition: width 0.05s linear;
   pointer-events: none;
 }
-
 
 /* ---------- Navigation ---------- */
 .nav {
@@ -220,7 +224,7 @@ a:hover {
 }
 
 .nav__link::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -2px;
   left: 0;
@@ -268,7 +272,6 @@ a:hover {
   transform: translateY(-7px) rotate(-45deg);
 }
 
-
 /* ---------- Sections (shared) ---------- */
 .section {
   padding: var(--space-4xl) var(--space-lg);
@@ -292,7 +295,7 @@ a:hover {
 }
 
 .section__label::before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 24px;
   height: 2px;
@@ -321,12 +324,13 @@ a:hover {
   background: var(--bg-secondary);
 }
 
-
 /* ---------- Reveal Animations ---------- */
 .reveal {
   opacity: 0;
   transform: translateY(32px);
-  transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);
+  transition:
+    opacity 0.7s var(--ease-out),
+    transform 0.7s var(--ease-out);
 }
 
 .reveal.visible {
@@ -339,14 +343,13 @@ a:hover {
   transition-delay: calc(var(--reveal-index, 0) * 0.08s);
 }
 
-
 /* ---------- HERO ---------- */
 .hero {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center; /* Center horizontally */
-  text-align: center;      /* Center text */
+  text-align: center; /* Center text */
   padding-top: calc(var(--nav-height) + var(--progress-height));
   position: relative;
   overflow: hidden;
@@ -354,7 +357,7 @@ a:hover {
 
 /* Subtle gradient orb behind hero - repositioned for centered layout */
 .hero::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 600px;
   height: 600px;
@@ -370,8 +373,12 @@ a:hover {
 }
 
 @keyframes heroOrb {
-  0%   { transform: translate(-50%, -50%) scale(1); }
-  100% { transform: translate(-50%, -40%) scale(1.1); }
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    transform: translate(-50%, -40%) scale(1.1);
+  }
 }
 
 /* Subtle decorative curved lines in bottom corners */
@@ -422,7 +429,7 @@ a:hover {
 /* Profile Image Area */
 .hero__profile {
   position: relative;
-  margin-top: var(--space-2xl); 
+  margin-top: var(--space-2xl);
   margin-bottom: var(--space-xl);
   display: inline-flex;
   justify-content: center;
@@ -430,7 +437,6 @@ a:hover {
   opacity: 0;
   animation: heroFadeUp 0.8s var(--ease-out) 0.1s forwards;
 }
-
 
 .hero__profile-img-container {
   position: relative;
@@ -516,8 +522,14 @@ a:hover {
 }
 
 @keyframes heroFadeUp {
-  from { opacity: 0; transform: translateY(24px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero__actions {
@@ -552,7 +564,9 @@ a:hover {
 
 .hero__socials a:hover {
   border-color: var(--accent);
-  color: var(--text-primary); /* Text color when hover for gradient glow visibility */
+  color: var(
+    --text-primary
+  ); /* Text color when hover for gradient glow visibility */
   background: var(--accent-subtle);
   transform: translateY(-2px);
 }
@@ -571,7 +585,6 @@ a:hover {
 .hero__socials svg:not([fill="none"]) {
   fill: currentColor;
 }
-
 
 /* ---------- Buttons ---------- */
 .btn {
@@ -608,13 +621,17 @@ a:hover {
   color: var(--text-primary);
   /* Create a gradient border using border-image or background-clip */
   border: 2px solid transparent;
-  background-image: linear-gradient(var(--bg-primary), var(--bg-primary)), var(--accent-gradient);
+  background-image:
+    linear-gradient(var(--bg-primary), var(--bg-primary)),
+    var(--accent-gradient);
   background-origin: border-box;
   background-clip: padding-box, border-box;
 }
 
 .btn--outline:hover {
-  background-image: linear-gradient(var(--bg-card-hover), var(--bg-card-hover)), var(--accent-gradient);
+  background-image:
+    linear-gradient(var(--bg-card-hover), var(--bg-card-hover)),
+    var(--accent-gradient);
   color: var(--text-primary);
   box-shadow: 0 4px 15px var(--accent-glow);
   transform: translateY(-2px);
@@ -631,7 +648,6 @@ a:hover {
   fill: currentColor;
   flex-shrink: 0;
 }
-
 
 /* ---------- ABOUT ---------- */
 .about__grid {
@@ -704,7 +720,6 @@ a:hover {
   line-height: 1.6;
 }
 
-
 /* ---------- EXPERIENCE ---------- */
 .timeline {
   position: relative;
@@ -712,7 +727,7 @@ a:hover {
 }
 
 .timeline::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 8px;
@@ -733,7 +748,7 @@ a:hover {
 
 /* Dot on the timeline */
 .timeline__item::before {
-  content: '';
+  content: "";
   position: absolute;
   left: calc(-1 * var(--space-2xl) - 5px);
   top: 8px;
@@ -786,7 +801,7 @@ a:hover {
   border-radius: 6px;
   flex-shrink: 0;
   overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .brand-logo-wrapper img {
@@ -823,7 +838,7 @@ a:hover {
 }
 
 .timeline__bullets li::before {
-  content: '→';
+  content: "→";
   position: absolute;
   left: 0;
   color: var(--accent);
@@ -843,7 +858,6 @@ a:hover {
   border: 2px solid var(--accent);
   box-shadow: none;
 }
-
 
 /* ---------- EDUCATION ---------- */
 .education-card {
@@ -901,7 +915,6 @@ a:hover {
   color: var(--text-muted);
 }
 
-
 /* ---------- SKILLS ---------- */
 .skills__group {
   margin-bottom: var(--space-2xl);
@@ -957,7 +970,6 @@ a:hover {
   transform: translateY(-2px);
 }
 
-
 /* ---------- CERTIFICATIONS ---------- */
 .certs__grid {
   display: grid;
@@ -976,7 +988,7 @@ a:hover {
   gap: var(--space-md);
 }
 
-.cert-card__header {
+.cert-card__issuer-group {
   display: flex;
   align-items: center;
   gap: var(--space-sm);
@@ -999,12 +1011,6 @@ a:hover {
   border-radius: 4px;
 }
 
-.cert-card__name {
-  font-weight: 600;
-  color: var(--text-primary);
-  line-height: 1.4;
-}
-
 .cert-card:hover {
   border-color: var(--accent-border);
   background: var(--bg-card-hover);
@@ -1015,21 +1021,21 @@ a:hover {
 .cert-card__name {
   font-size: 0.95rem;
   font-weight: 600;
-  margin-bottom: var(--space-sm);
+  color: var(--text-primary);
   line-height: 1.4;
+  margin-bottom: 0;
 }
 
 .cert-card__issuer {
   font-size: 0.82rem;
   color: var(--text-secondary);
-  margin-bottom: var(--space-xs);
+  margin-bottom: 0;
 }
 
 .cert-card__date {
   font-size: 0.78rem;
   color: var(--text-muted);
 }
-
 
 /* ---------- HIGHLIGHTS STRIP ---------- */
 .highlights-strip {
@@ -1056,7 +1062,6 @@ a:hover {
   border-left-color: var(--accent);
 }
 
-
 /* ---------- PROJECTS ---------- */
 .projects__grid {
   display: grid;
@@ -1077,7 +1082,9 @@ a:hover {
 .project-card:hover {
   border-color: var(--accent-border);
   transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35), 0 0 0 1px var(--accent-border);
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.35),
+    0 0 0 1px var(--accent-border);
 }
 
 .project-card--flagship {
@@ -1088,7 +1095,11 @@ a:hover {
 
 .project-card__visual {
   position: relative;
-  background: linear-gradient(135deg, var(--accent-subtle), var(--bg-secondary));
+  background: linear-gradient(
+    135deg,
+    var(--accent-subtle),
+    var(--bg-secondary)
+  );
   min-height: 200px;
   display: flex;
   align-items: center;
@@ -1168,7 +1179,6 @@ a:hover {
   margin-top: auto;
 }
 
-
 /* ---------- PROJECT CARD — Expandable Details/Accordion ---------- */
 .project-card__details {
   margin-bottom: var(--space-lg);
@@ -1189,7 +1199,7 @@ a:hover {
   border: 1px solid var(--accent-border);
   border-radius: var(--radius-sm);
   cursor: pointer;
-  list-style: none;                   /* Remove default marker */
+  list-style: none; /* Remove default marker */
   transition: all var(--duration) var(--ease-out);
 }
 
@@ -1200,7 +1210,7 @@ a:hover {
 
 .project-card__toggle::marker {
   display: none;
-  content: '';
+  content: "";
 }
 
 .project-card__toggle:hover {
@@ -1308,7 +1318,6 @@ a:hover {
   margin-right: var(--space-xs);
 }
 
-
 /* ---------- FOOTER ---------- */
 .footer {
   padding: var(--space-2xl) var(--space-lg);
@@ -1362,7 +1371,6 @@ a:hover {
   color: var(--accent);
 }
 
-
 /* ==========================================================================
    RESPONSIVE
    ========================================================================== */
@@ -1407,7 +1415,9 @@ a:hover {
     gap: var(--space-lg);
     transform: translateY(-120%);
     opacity: 0;
-    transition: transform 0.4s var(--ease-out), opacity 0.4s var(--ease-out);
+    transition:
+      transform 0.4s var(--ease-out),
+      opacity 0.4s var(--ease-out);
     pointer-events: none;
     z-index: 999;
   }
