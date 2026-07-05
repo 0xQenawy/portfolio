@@ -13,12 +13,15 @@
 /* ---------- CSS Custom Properties (Design Tokens) ---------- */
 :root {
   /* Accent — single source of truth */
-  --accent:            #3b82f6;           /* Electric blue */
+  --accent:            #60a5fa;           /* Electric blue */
   --accent-light:      #60a5fa;
   --accent-dark:       #2563eb;
-  --accent-glow:       rgba(59, 130, 246, 0.35);
+  --accent-glow:       rgba(96, 165, 250, 0.35);
   --accent-subtle:     rgba(59, 130, 246, 0.08);
   --accent-border:     rgba(59, 130, 246, 0.20);
+  
+  /* Global Gradient Treatment */
+  --accent-gradient:   linear-gradient(135deg, var(--accent), var(--accent-light));
 
   /* Surfaces */
   --bg-primary:        #0a0a0a;
@@ -142,7 +145,7 @@ a:hover {
   top: 0;
   left: 0;
   height: var(--progress-height);
-  background: linear-gradient(90deg, var(--accent-dark), var(--accent), var(--accent-light));
+  background: var(--accent-gradient);
   width: 0%;
   z-index: 1001;
   transition: width 0.05s linear;
@@ -189,7 +192,11 @@ a:hover {
 }
 
 .nav__logo span {
-  color: var(--accent);
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .nav__links {
@@ -219,7 +226,7 @@ a:hover {
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--accent);
+  background: var(--accent-gradient);
   border-radius: 1px;
   transition: width var(--duration) var(--ease-out);
 }
@@ -289,7 +296,7 @@ a:hover {
   display: inline-block;
   width: 24px;
   height: 2px;
-  background: var(--accent);
+  background: var(--accent-gradient);
   border-radius: 1px;
 }
 
@@ -338,29 +345,67 @@ a:hover {
   min-height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center; /* Center horizontally */
+  text-align: center;      /* Center text */
   padding-top: calc(var(--nav-height) + var(--progress-height));
   position: relative;
   overflow: hidden;
 }
 
-/* Subtle gradient orb behind hero */
+/* Subtle gradient orb behind hero - repositioned for centered layout */
 .hero::before {
   content: '';
   position: absolute;
   width: 600px;
   height: 600px;
   background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
-  top: 20%;
-  right: -10%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 50%;
   filter: blur(80px);
   pointer-events: none;
   animation: heroOrb 8s ease-in-out infinite alternate;
+  z-index: 0;
 }
 
 @keyframes heroOrb {
-  0%   { transform: translate(0, 0)   scale(1); }
-  100% { transform: translate(-40px, 30px) scale(1.1); }
+  0%   { transform: translate(-50%, -50%) scale(1); }
+  100% { transform: translate(-50%, -40%) scale(1.1); }
+}
+
+/* Subtle decorative curved lines in bottom corners */
+.hero__decor-left,
+.hero__decor-right {
+  position: absolute;
+  bottom: -5%;
+  width: 300px;
+  height: 300px;
+  border: 1px solid var(--border-light);
+  border-radius: 50%;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 0;
+}
+.hero__decor-left {
+  left: -5%;
+}
+.hero__decor-right {
+  right: -5%;
+}
+
+/* Subtle dotted pattern on the right side */
+.hero__bg-dots {
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  width: 200px;
+  height: 200px;
+  background-image: radial-gradient(var(--border) 2px, transparent 2px);
+  background-size: 20px 20px;
+  opacity: 0.5;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .hero__content {
@@ -369,15 +414,65 @@ a:hover {
   padding: 0 var(--space-lg);
   position: relative;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Profile Image Area */
+.hero__profile {
+  position: relative;
+  margin-top: var(--space-2xl); 
+  margin-bottom: var(--space-xl);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: heroFadeUp 0.8s var(--ease-out) 0.1s forwards;
+}
+
+
+.hero__profile-img-container {
+  position: relative;
+  margin: 0 auto var(--space-md);
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  padding: 3.5px;
+  background: var(--accent-gradient);
+  z-index: 2;
+}
+
+.hero__profile-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--bg-card);
+}
+
+.hero__profile-fallback {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--bg-card);
+  border: 3px solid var(--bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-primary);
 }
 
 .hero__greeting {
-  font-size: 1rem;
+  font-size: 1.05rem;
   color: var(--accent);
   font-weight: 500;
   margin-bottom: var(--space-sm);
   opacity: 0;
   animation: heroFadeUp 0.8s var(--ease-out) 0.2s forwards;
+  letter-spacing: 0.05em;
 }
 
 .hero__name {
@@ -390,19 +485,33 @@ a:hover {
   animation: heroFadeUp 0.8s var(--ease-out) 0.4s forwards;
 }
 
+.hero__name-first {
+  color: var(--text-primary);
+  display: block;
+}
+
+.hero__name-last {
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: block;
+}
+
 .hero__tagline {
-  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-size: clamp(1rem, 2vw, 1.25rem);
   color: var(--text-secondary);
   font-weight: 400;
-  line-height: 1.5;
-  max-width: 580px;
+  line-height: 1.6;
+  max-width: 650px;
   margin-bottom: var(--space-2xl);
   opacity: 0;
   animation: heroFadeUp 0.8s var(--ease-out) 0.6s forwards;
 }
 
 .hero__tagline strong {
-  color: var(--accent-light);
+  color: var(--text-primary);
   font-weight: 600;
 }
 
@@ -415,6 +524,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-md);
+  justify-content: center;
   margin-bottom: var(--space-2xl);
   opacity: 0;
   animation: heroFadeUp 0.8s var(--ease-out) 0.8s forwards;
@@ -423,6 +533,7 @@ a:hover {
 .hero__socials {
   display: flex;
   gap: var(--space-md);
+  justify-content: center;
   opacity: 0;
   animation: heroFadeUp 0.8s var(--ease-out) 1s forwards;
 }
@@ -441,7 +552,7 @@ a:hover {
 
 .hero__socials a:hover {
   border-color: var(--accent);
-  color: var(--accent);
+  color: var(--text-primary); /* Text color when hover for gradient glow visibility */
   background: var(--accent-subtle);
   transform: translateY(-2px);
 }
@@ -468,9 +579,9 @@ a:hover {
   align-items: center;
   gap: var(--space-sm);
   font-family: var(--font-sans);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 600;
-  padding: 0.75rem 1.6rem;
+  padding: 0.8rem 1.8rem;
   border-radius: var(--radius-full);
   border: none;
   cursor: pointer;
@@ -480,13 +591,13 @@ a:hover {
 }
 
 .btn--primary {
-  background: var(--accent);
+  background: var(--accent-gradient);
   color: #fff;
   box-shadow: 0 0 0 0 var(--accent-glow);
 }
 
 .btn--primary:hover {
-  background: var(--accent-dark);
+  filter: brightness(1.1);
   color: #fff;
   box-shadow: 0 0 24px var(--accent-glow);
   transform: translateY(-2px);
@@ -495,13 +606,17 @@ a:hover {
 .btn--outline {
   background: transparent;
   color: var(--text-primary);
-  border: 1px solid var(--border-light);
+  /* Create a gradient border using border-image or background-clip */
+  border: 2px solid transparent;
+  background-image: linear-gradient(var(--bg-primary), var(--bg-primary)), var(--accent-gradient);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
 }
 
 .btn--outline:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-  background: var(--accent-subtle);
+  background-image: linear-gradient(var(--bg-card-hover), var(--bg-card-hover)), var(--accent-gradient);
+  color: var(--text-primary);
+  box-shadow: 0 4px 15px var(--accent-glow);
   transform: translateY(-2px);
 }
 
@@ -624,7 +739,7 @@ a:hover {
   top: 8px;
   width: 12px;
   height: 12px;
-  background: var(--accent);
+  background: var(--accent-gradient);
   border-radius: 50%;
   border: 3px solid var(--bg-primary);
   box-shadow: 0 0 0 2px var(--accent);
@@ -1319,10 +1434,12 @@ a:hover {
 
   .hero__actions {
     flex-direction: column;
+    width: 100%;
   }
 
   .hero__actions .btn {
     justify-content: center;
+    width: 100%;
   }
 
   /* Timeline */

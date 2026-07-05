@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://YOUR_GITHUB_USERNAME.github.io/portfolio/sitemap.xml
+Sitemap: https://0xQenawy.github.io/portfolio/sitemap.xml
 # TODO: Update the Sitemap URL above with your actual deployed GitHub Pages URL
