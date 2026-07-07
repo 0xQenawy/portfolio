@@ -32,7 +32,7 @@
   --bg-secondary: #111111;
   --bg-card: #161616;
   --bg-card-hover: #1a1a1a;
-  --bg-nav: rgba(10, 10, 10, 0.85);
+  --bg-nav: rgba(10, 10, 10, 0.3);
 
   /* Text */
   --text-primary: #f0f0f0;
@@ -1409,7 +1409,7 @@ a:hover {
     right: 0;
     bottom: 0;
     flex-direction: column;
-    background: #0a0a0a;
+    align-items: flex-end;
     border-bottom: 1px solid var(--border);
     padding: var(--space-2xl) var(--space-lg);
     gap: var(--space-lg);

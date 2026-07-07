@@ -2,4 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://0xQenawy.github.io/portfolio/sitemap.xml
-# TODO: Update the Sitemap URL above with your actual deployed GitHub Pages URL
