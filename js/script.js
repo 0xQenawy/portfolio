@@ -41,10 +41,10 @@ document.addEventListener("DOMContentLoaded", () => {
       if (entry.isIntersecting) {
         const id = entry.target.getAttribute("id");
         navLinks.forEach((link) => {
-          link.classList.toggle(
-            "active",
-            link.getAttribute("href") === `#${id}`,
-          );
+          const isActive = link.getAttribute("href") === `#${id}`;
+          link.classList.toggle("active", isActive);
+          if (isActive) link.setAttribute("aria-current", "true");
+          else link.removeAttribute("aria-current");
         });
       }
     });
@@ -59,28 +59,33 @@ document.addEventListener("DOMContentLoaded", () => {
   const navMenu = document.getElementById("nav-menu");
 
   if (navToggle && navMenu) {
+    const setMenu = (open, returnFocus) => {
+      navMenu.classList.toggle("open", open);
+      navToggle.classList.toggle("open", open);
+      navToggle.setAttribute("aria-expanded", String(open));
+      document.body.classList.toggle("menu-open", open);
+      if (!open && returnFocus) navToggle.focus();
+    };
+
     navToggle.addEventListener("click", () => {
-      const isOpen = navMenu.classList.toggle("open");
-      navToggle.classList.toggle("open", isOpen);
-      navToggle.setAttribute("aria-expanded", isOpen);
+      setMenu(!navMenu.classList.contains("open"), false);
     });
 
     // Close menu when a link is clicked
     navMenu.querySelectorAll(".nav__link").forEach((link) => {
-      link.addEventListener("click", () => {
-        navMenu.classList.remove("open");
-        navToggle.classList.remove("open");
-        navToggle.setAttribute("aria-expanded", "false");
-      });
+      link.addEventListener("click", () => setMenu(false, false));
     });
 
     // Close menu on Escape key
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape" && navMenu.classList.contains("open")) {
-        navMenu.classList.remove("open");
-        navToggle.classList.remove("open");
-        navToggle.setAttribute("aria-expanded", "false");
+        setMenu(false, true);
       }
+    });
+
+    // Reset when resizing to desktop
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 768) setMenu(false, false);
     });
   }
 

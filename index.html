@@ -12,32 +12,27 @@
   <meta name="robots" content="index, follow" />
   
   <!-- Canonical URL -->
-  <link rel="canonical" href="https://0xQenawy.github.io/portfolio/" />
+  <link rel="canonical" href="https://0xqenawy.github.io/portfolio/" />
 
   <!-- Open Graph (Facebook, LinkedIn, etc.) -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Abdelrahman Gamal Portfolio" />
   <meta property="og:title" content="Abdelrahman Gamal — Product Owner, Product Manager &amp; Business Analyst" />
   <meta property="og:description" content="Portfolio of Abdelrahman Gamal — Product Owner and Business Analyst turning ideas into shippable products. Specializing in Product Strategy, Agile leadership, Requirements Gathering, and Secure Product Design." />
-  <meta property="og:url" content="https://0xQenawy.github.io/portfolio/" />
-  <!-- TODO: Update og:image below after deploying. Create an og-image.png (1200x630) with alt text and place in assets/ -->
-  <meta property="og:image" content="https://0xQenawy.github.io/portfolio/assets/og-image.png" />
+  <meta property="og:url" content="https://0xqenawy.github.io/portfolio/" />
+  <meta property="og:image" content="https://0xqenawy.github.io/portfolio/assets/og-image.png" />
   <meta property="og:image:alt" content="Abdelrahman Gamal - Product Owner &amp; Business Analyst Portfolio Preview Image" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <!-- TODO: Add your Twitter handle below if applicable, e.g., @yourhandle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE" />
-  <meta name="twitter:creator" content="@YOUR_TWITTER_HANDLE" />
   <meta name="twitter:title" content="Abdelrahman Gamal — Product Owner, Product Manager &amp; Business Analyst" />
   <meta name="twitter:description" content="Product Owner and Business Analyst turning ideas into shippable products. Specializing in Product Strategy, Agile leadership, Requirements Gathering, and Secure Product Design." />
-  <!-- TODO: Update twitter:image below after deploying -->
-  <meta name="twitter:image" content="https://0xQenawy.github.io/portfolio/assets/og-image.png" />
+  <meta name="twitter:image" content="https://0xqenawy.github.io/portfolio/assets/og-image.png" />
   <meta name="twitter:image:alt" content="Abdelrahman Gamal - Product Owner &amp; Business Analyst Portfolio Preview Image" />
 
   <!-- Favicon -->
-  <!-- TODO: Add a favicon.ico (fallback) and apple-touch-icon.png in the assets/ folder for broader device support -->
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
 
   <!-- Structured Data (JSON-LD Person Schema) -->
@@ -47,7 +42,7 @@
     "@type": "Person",
     "name": "Abdelrahman Gamal",
     "jobTitle": "Product Owner & Business Analyst",
-    "url": "https://0xQenawy.github.io/portfolio/",
+    "url": "https://0xqenawy.github.io/portfolio/",
     "sameAs": [
       "https://linkedin.com/in/abdel-rhman-gamal",
       "https://github.com/0xQenawy"
@@ -84,7 +79,8 @@
   <div id="scroll-progress" aria-hidden="true"></div>
 
   <!-- ===================== NAVIGATION ===================== -->
-  <nav class="nav" role="navigation" aria-label="Main navigation">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <nav class="nav" aria-label="Main navigation">
     <div class="nav__inner">
       <a href="#home" class="nav__logo" aria-label="Home">A<span>.</span>G</a>
 
@@ -100,13 +96,13 @@
         <span></span>
       </button>
 
-      <ul class="nav__links" id="nav-menu" role="menubar">
-        <li role="none"><a href="#home" class="nav__link active" role="menuitem">Home</a></li>
-        <li role="none"><a href="#about" class="nav__link" role="menuitem">About</a></li>
-        <li role="none"><a href="#experience" class="nav__link" role="menuitem">Experience</a></li>
-        <li role="none"><a href="#skills" class="nav__link" role="menuitem">Skills</a></li>
-        <li role="none"><a href="#projects" class="nav__link" role="menuitem">Projects</a></li>
-        <li role="none"><a href="#contact" class="nav__link" role="menuitem">Contact</a></li>
+      <ul class="nav__links" id="nav-menu">
+        <li><a href="#home" class="nav__link active" aria-current="true">Home</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#experience" class="nav__link">Experience</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -124,7 +120,7 @@
       <div class="hero__profile">
         <div class="hero__profile-glow"></div>
         <div class="hero__profile-img-container">
-          <img src="assets/profile image.png" alt="Abdelrahman Gamal AlQenawy — Product Owner" class="hero__profile-img" onerror="this.outerHTML='<div class=\'hero__profile-fallback\'>A</div>'" />
+          <img src="assets/profile-image.png" alt="Abdelrahman Gamal AlQenawy — Product Owner" class="hero__profile-img" onerror="this.outerHTML='<div class=\'hero__profile-fallback\'>A</div>'" />
         </div>
       </div>
 
@@ -165,74 +161,194 @@
     <div class="section__inner">
       <span class="section__label reveal">About Me</span>
       <h2 class="section__title reveal">Bridging Engineering &amp; Product Strategy</h2>
+      <div class="about__layout">
+      <div class="about__text reveal">
+        <p>
+          Product Owner &amp; Business Analyst with a Communication &amp; Computer Engineering background. At <strong>Zikola Agency</strong> I owned requirements for Sakn, a housing platform: PRD/SRS, user stories, acceptance criteria and daily work with design and engineering. I talk to developers in their own language, and I think about security and scalability from the first requirement. Open to Remote and Hybrid roles.
+        </p>
+      </div>
+      <ul class="about__stats reveal" aria-label="At a glance">
+        <li><strong>Zikola</strong><span>Product Owner Intern, May to Aug 2026</span></li>
+        <li><strong>1</strong><span>AI hackathon, INSTANT 2026</span></li>
+        <li><strong>4</strong><span>Projects built or led</span></li>
+      </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section id="projects" class="section">
+    <div class="section__inner">
+      <span class="section__label reveal">Projects</span>
+      <h2 class="section__title reveal">Things I've Built &amp; Led</h2>
       <p class="section__subtitle reveal">
-        An engineering mind with a product heart — translating business goals into outcomes that ship.
+        From product strategy to hands-on execution — each project reflects a different facet of product thinking.
       </p>
 
-      <div class="about__grid">
-        <div class="about__text reveal">
-          <p>
-            I have a strong technical foundation in <strong>Cybersecurity, Networking, Web Technologies, and Software Engineering</strong>. I intentionally transitioned toward <strong>Product Ownership and Business Analysis</strong> because I became more interested in understanding <em>why</em> products succeed, not only how they are built.
-          </p>
-          <p>
-            During my <strong>Product Owner internship at Zikola Agency</strong>, I strengthened my experience in Requirements Gathering, Business Analysis, and Agile product workflows. I developed hands-on expertise in writing PRDs and SRS documents, defining User Stories and Acceptance Criteria, and driving stakeholder communication.
-          </p>
-          <p>
-            This dual perspective allows me to bridge Business, Product, and Engineering. My technical background enables me to communicate naturally with engineering teams, understand APIs and software architecture, evaluate technical trade-offs, and inherently consider security and scalability during product planning.
-          </p>
-        </div>
+      <div class="projects__grid reveal-group">
 
-        <div class="about__highlights reveal-group">
-          <!-- Highlight 1 -->
-          <div class="about__highlight-item reveal">
-            <div class="about__highlight-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        <!-- -------- Project 1: AI Assessment Platform (Flagship) -------- -->
+        <article class="project-card project-card--flagship reveal" id="project-assessment">
+          <div class="project-card__visual">
+            <!-- SCREENSHOT PLACEHOLDER: add a real project image (assets/projects/...) -->
+            <img class="project-card__visual-logo" src="assets/projects/hirqo-mark.png" alt="" width="96" height="96" loading="lazy" />
+            <span class="project-card__badge">Flagship</span>
+          </div>
+          <div class="project-card__body">
+            <p class="project-card__role">Team Lead &amp; Product Owner</p>
+            <h3 class="project-card__title">HirQO</h3>
+            <p class="project-card__subtitle">AI-Powered Technical Assessment Platform</p>
+            <p class="project-card__desc">
+              Managed the Product Management backlog and Scrum ceremonies for a cross-functional dev team.
+              Defined MVP scope with a deliberately imperfect AI concept designed
+              to surface genuine candidate understanding over memorized answers.
+            </p>
+
+            <details class="project-card__details">
+              <summary class="project-card__toggle">
+                <span>View Full Breakdown</span>
+                <svg class="project-card__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </summary>
+              <div class="project-card__expanded">
+                <div class="project-card__detail-row">
+                  <span class="project-card__detail-label">Problem</span>
+                  <p>Technical hiring assessments often test memorization over real understanding. Existing platforms reward pattern-matching and rehearsed answers rather than surfacing genuine problem-solving ability.</p>
+                </div>
+                <div class="project-card__detail-row">
+                  <span class="project-card__detail-label">Solution</span>
+                  <p>Built an AI-powered assessment platform focusing on Secure Product Design and scalable Software Architecture. The platform generates slightly flawed code so candidates must demonstrate genuine understanding to correct issues.</p>
+                </div>
+                <div class="project-card__detail-row">
+                  <span class="project-card__detail-label">Product Decision</span>
+                  <p>Guided by Product Discovery and structured buyer role-play with HR managers. Chose a GTM strategy of pay-per-assessment → subscription, launching in Egypt with Gulf expansion path.</p>
+                </div>
+                <div class="project-card__detail-row">
+                  <span class="project-card__detail-label">Role</span>
+                  <p>Team Lead &amp; Product Owner — managed prioritized backlog, facilitated Agile and Scrum ceremonies, and drove the Product Strategy balancing technical feasibility with user value.</p>
+                </div>
+                <div class="project-card__detail-row">
+                  <span class="project-card__detail-label">Outcome</span>
+                  <p>Working graduation project with validated market interest. Buyer role-play confirmed willingness to pay among target personas.</p>
+                </div>
+              </div>
+            </details>
+
+            <div class="project-card__tags">
+              <span class="project-card__tag">Product Strategy</span>
+              <span class="project-card__tag">Agile</span>
+              <span class="project-card__tag">User Validation</span>
+              <span class="project-card__tag">GTM Planning</span>
             </div>
-            <div>
-              <p class="about__highlight-title">Product Thinking</p>
-              <p class="about__highlight-desc">Product Discovery, prioritization, MVP definition, Product Strategy, User Stories, roadmap planning, and Cross-functional Collaboration.</p>
+            <div class="project-card__actions">
+              <a href="mailto:abdelrhman.bin.gamal@gmail.com?subject=AI%20Assessment%20Platform%20—%20Presentation%20Request" class="btn btn--primary btn--small">
+                Request Full Presentation
+              </a>
             </div>
           </div>
+        </article>
 
-          <!-- Highlight 2 -->
-          <div class="about__highlight-item reveal">
-            <div class="about__highlight-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M9 12h6m-3-3v6m9-10a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <!-- -------- Project 2: Sakn -------- -->
+        <article class="project-card reveal" id="project-sakn">
+          <!-- SCREENSHOT PLACEHOLDER: when you have a project image, add above the card body:
+               <div class="project-card__visual"><img src="assets/projects/NAME.png" alt="Project name screenshot" loading="lazy" /></div> -->
+          <div class="project-card__body">
+            <p class="project-card__role">Business Analyst &amp; Product Contributor</p>
+            <h3 class="project-card__title">Sakn</h3>
+            <p class="project-card__desc">
+              A property/housing solution addressing real pain points in the Egyptian rental and housing market.
+            </p>
+
+            <details class="project-card__details">
+              <summary class="project-card__toggle">
+                <span>View Full Breakdown</span>
+                <svg class="project-card__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </summary>
+              <div class="project-card__expanded">
+                <div class="project-card__detail-row">
+                  <span class="project-card__detail-label">Problem</span>
+                  <p>The Egyptian rental and housing market lacks transparency and structure, making it difficult for tenants and landlords to find trustworthy matches.</p>
+                </div>
+                <div class="project-card__detail-row">
+                  <span class="project-card__detail-label">Solution</span>
+                  <p>A structured property platform that addresses key pain points in the MENA housing market through better matching and verified listings.</p>
+                </div>
+                <div class="project-card__detail-row">
+                  <span class="project-card__detail-label">Product Decision</span>
+                  <p>Focused on rigorous Business Analysis and PRD/SRS documentation as a case study — translating complex business requirements into structured Product Management artifacts.</p>
+                </div>
+                <div class="project-card__detail-row">
+                  <span class="project-card__detail-label">Role</span>
+                  <p>Business Analyst &amp; Product Contributor — responsible for Requirements Gathering (PRD / SRS) and business process flow mapping.</p>
+                </div>
+                <div class="project-card__detail-row">
+                  <span class="project-card__detail-label">Outcome</span>
+                  <p>Complete PRD/SRS documentation delivered as a product case study.</p>
+                </div>
+              </div>
+            </details>
+
+            <div class="project-card__tags">
+              <span class="project-card__tag">PropTech</span>
+              <span class="project-card__tag">PRD / SRS</span>
+              <span class="project-card__tag">User Research</span>
             </div>
-            <div>
-              <p class="about__highlight-title">Business Analysis</p>
-              <p class="about__highlight-desc">Requirements Gathering, process analysis, stakeholder communication, PRD &amp; SRS documentation, Acceptance Criteria, and translating business needs into actionable product requirements.</p>
+            <div class="project-card__actions">
+              <a href="#" class="btn btn--outline btn--small">Learn More</a>
             </div>
           </div>
+        </article>
 
-          <!-- Highlight 3 -->
-          <div class="about__highlight-item reveal">
-            <div class="about__highlight-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <article class="project-card reveal" id="project-cdss">
+          <!-- SCREENSHOT PLACEHOLDER: when you have a project image, add above the card body:
+               <div class="project-card__visual"><img src="assets/projects/NAME.png" alt="Project name screenshot" loading="lazy" /></div> -->
+          <div class="project-card__body">
+            <p class="project-card__role">AI &amp; RAG Developer · INSTANT Hackathon 2026</p>
+            <h3 class="project-card__title">Clinical Decision Support System</h3>
+            <p class="project-card__desc">
+              A hybrid RAG system for precision oncology (NSCLC). It retrieves NCCN guideline evidence with ChromaDB + BM25 and returns treatment-protocol recommendations with citations, served through FastAPI and a React dashboard. Built with a team in Aug 2026. Evaluation: <strong>100% context recall</strong> and <strong>97.45% answer relevancy</strong>.
+            </p>
+            <div class="project-card__tags">
+              <span class="project-card__tag">RAG</span>
+              <span class="project-card__tag">ChromaDB</span>
+              <span class="project-card__tag">BM25</span>
+              <span class="project-card__tag">FastAPI</span>
+              <span class="project-card__tag">LangChain</span>
+              <span class="project-card__tag">React</span>
             </div>
-            <div>
-              <p class="about__highlight-title">Technical Foundation</p>
-              <p class="about__highlight-desc">Strong foundation in Cybersecurity, Networking, Software Engineering, APIs, Secure Product Design, and Software Architecture, enabling effective collaboration with development teams and informed technical decision-making.</p>
+            <div class="project-card__actions">
+              <a href="https://github.com/0xQenawy/Clinical-Decision-Support-System---CDSS" class="btn btn--outline btn--small" target="_blank" rel="noopener noreferrer">View on GitHub</a>
             </div>
           </div>
+        </article>
 
-          <!-- Highlight 4 -->
-          <div class="about__highlight-item reveal">
-            <div class="about__highlight-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+        <article class="project-card reveal" id="project-emad">
+          <!-- SCREENSHOT PLACEHOLDER: when you have a project image, add above the card body:
+               <div class="project-card__visual"><img src="assets/projects/NAME.png" alt="Project name screenshot" loading="lazy" /></div> -->
+          <div class="project-card__body">
+            <p class="project-card__role">Solo Developer</p>
+            <h3 class="project-card__title">Emad</h3>
+            <p class="project-card__desc">
+              A job and internship discovery engine for Egypt, Saudi Arabia and the UAE. It pulls listings from LinkedIn and Tanqeeb, filters out irrelevant roles, merges cross-source duplicates and ranks results 0-100 with direct apply links. Product call: a false merge is worse than a missed duplicate, so deduplication is deliberately conservative.
+            </p>
+            <div class="project-card__tags">
+              <span class="project-card__tag">Job Discovery</span>
+              <span class="project-card__tag">Python</span>
+              <span class="project-card__tag">Streamlit</span>
+              <span class="project-card__tag">MENA</span>
             </div>
-            <div>
-              <p class="about__highlight-title">MENA Market Awareness</p>
-              <p class="about__highlight-desc">Based in Egypt with an understanding of regional market dynamics and digital product opportunities across the MENA region. Open to Remote and Hybrid opportunities globally.</p>
+            <div class="project-card__actions">
+              <a href="https://emad-s.streamlit.app/" class="btn btn--primary btn--small" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              <a href="https://github.com/0xQenawy/EMAD" class="btn btn--outline btn--small" target="_blank" rel="noopener noreferrer">View on GitHub</a>
             </div>
           </div>
-        </div>
+        </article>
+
       </div>
     </div>
   </section>
 
   <!-- ===================== EXPERIENCE ===================== -->
-  <section id="experience" class="section">
+  <section id="experience" class="section section--alt">
     <div class="section__inner">
       <span class="section__label reveal">Experience</span>
       <h2 class="section__title reveal">Where I've Made an Impact</h2>
@@ -261,7 +377,12 @@
         <!-- Experience 2 — Secondary -->
         <div class="timeline__item timeline__item--secondary reveal">
           <p class="timeline__date">Graduation Project</p>
-          <h3 class="timeline__role">Team Lead &amp; Product Owner</h3>
+          <h3 class="timeline__role">
+            <div class="brand-logo-wrapper timeline__role-logo timeline__role-logo--dark">
+              <img src="assets/projects/hirqo-mark.png" alt="HirQO logo" />
+            </div>
+            Team Lead &amp; Product Owner
+          </h3>
           <p class="timeline__company">Technical Talent Assessment Platform</p>
           <ul class="timeline__bullets">
             <li>Managed a prioritized product backlog and facilitated Agile and Scrum ceremonies (sprint planning, team syncs) for a cross-functional development team.</li>
@@ -274,11 +395,12 @@
   </section>
 
   <!-- ===================== EDUCATION ===================== -->
-  <section id="education" class="section section--alt">
+  <section id="education" class="section">
     <div class="section__inner">
       <span class="section__label reveal">Education</span>
       <h2 class="section__title reveal">Academic Foundation</h2>
 
+      <div class="edu-row">
       <div class="education-card reveal">
         <div class="brand-logo-wrapper education-card__brand" aria-hidden="true" aria-label="Mansoura University">
           <img src="assets/logos/Mansoura University logo.svg" alt="Mansoura University Official Logo" />
@@ -289,11 +411,19 @@
           <p class="education-card__date">Expected Graduation: January 2027</p>
         </div>
       </div>
+      <div class="languages-card reveal">
+        <p class="languages-card__title">Languages</p>
+        <ul class="languages-card__list">
+          <li><strong>Arabic</strong><span>Native</span></li>
+          <li><strong>English</strong><span>Professional working proficiency</span></li>
+        </ul>
+      </div>
+      </div>
     </div>
   </section>
 
   <!-- ===================== SKILLS ===================== -->
-  <section id="skills" class="section">
+  <section id="skills" class="section section--alt">
     <div class="section__inner">
       <span class="section__label reveal">Skills</span>
       <h2 class="section__title reveal">What I Bring to the Table</h2>
@@ -306,13 +436,13 @@
         <div class="skills__group reveal">
           <h3 class="skills__group-title">Product Management</h3>
           <div class="skills__pills">
-            <span class="skill-pill">Product Discovery</span>
-            <span class="skill-pill">Product Strategy</span>
-            <span class="skill-pill">Backlog Management</span>
-            <span class="skill-pill">MVP Definition</span>
-            <span class="skill-pill">User Stories</span>
-            <span class="skill-pill">Acceptance Criteria</span>
-            <span class="skill-pill">Product Roadmapping</span>
+            <span class="skill-pill"><svg class="skill-pill__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg> Product Discovery</span>
+            <span class="skill-pill"><svg class="skill-pill__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg> Product Strategy</span>
+            <span class="skill-pill"><svg class="skill-pill__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 17 2 2 4-4"/><path d="m3 7 2 2 4-4"/><path d="M13 6h8"/><path d="M13 12h8"/><path d="M13 18h8"/></svg> Backlog Management</span>
+            <span class="skill-pill"><svg class="skill-pill__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" x2="4" y1="22" y2="15"/></svg> MVP Definition</span>
+            <span class="skill-pill"><svg class="skill-pill__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><polyline points="16 11 18 13 22 9"/></svg> User Stories</span>
+            <span class="skill-pill"><svg class="skill-pill__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Acceptance Criteria</span>
+            <span class="skill-pill"><svg class="skill-pill__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" x2="9" y1="3" y2="18"/><line x1="15" x2="15" y1="6" y2="21"/></svg> Product Roadmapping</span>
           </div>
         </div>
 
@@ -371,7 +501,7 @@
   </section>
 
   <!-- ===================== CERTIFICATIONS ===================== -->
-  <section id="certifications" class="section section--alt">
+  <section id="certifications" class="section">
     <div class="section__inner">
       <span class="section__label reveal">Certifications</span>
       <h2 class="section__title reveal">Verified Credentials</h2>
@@ -422,267 +552,8 @@
     </div>
   </section>
 
-  <!-- ===================== HIGHLIGHTS (replaces metrics) ===================== -->
-  <section id="highlights" class="section">
-    <div class="section__inner">
-      <span class="section__label reveal">Highlights</span>
-      <h2 class="section__title reveal">Key Accomplishments</h2>
-
-      <div class="highlights-strip reveal-group">
-        <div class="highlight-card reveal">
-          Led a Cross-functional Collaboration effort as an Agile Team Lead &amp; Product Owner for a graduation project.
-        </div>
-        <div class="highlight-card reveal">
-          Conducted extensive Business Analysis to translate requirements into full PRD / SRS documentation.
-        </div>
-        <div class="highlight-card reveal">
-          Validated a startup concept through Product Discovery and structured buyer role-play with industry stakeholders.
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== PROJECTS ===================== -->
-  <section id="projects" class="section section--alt">
-    <div class="section__inner">
-      <span class="section__label reveal">Projects</span>
-      <h2 class="section__title reveal">Things I've Built &amp; Led</h2>
-      <p class="section__subtitle reveal">
-        From product strategy to hands-on execution — each project reflects a different facet of product thinking.
-      </p>
-
-      <div class="projects__grid reveal-group">
-
-        <!-- -------- Project 1: AI Assessment Platform (Flagship) -------- -->
-        <article class="project-card project-card--flagship reveal" id="project-assessment">
-          <div class="project-card__visual">
-            <span class="project-card__visual-icon" aria-hidden="true">🧠</span>
-            <span class="project-card__badge">Flagship</span>
-          </div>
-          <div class="project-card__body">
-            <p class="project-card__role">Team Lead &amp; Product Owner</p>
-            <h3 class="project-card__title">AI-Powered Technical Assessment Platform</h3>
-            <p class="project-card__desc">
-              Managed the Product Management backlog and Scrum ceremonies for a cross-functional dev team.
-              Defined MVP scope with a deliberately imperfect AI concept designed
-              to surface genuine candidate understanding over memorized answers.
-            </p>
-
-            <details class="project-card__details">
-              <summary class="project-card__toggle">
-                <span>View Full Breakdown</span>
-                <svg class="project-card__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </summary>
-              <div class="project-card__expanded">
-                <div class="project-card__detail-row">
-                  <span class="project-card__detail-label">Problem</span>
-                  <p>Technical hiring assessments often test memorization over real understanding. Existing platforms reward pattern-matching and rehearsed answers rather than surfacing genuine problem-solving ability.</p>
-                </div>
-                <div class="project-card__detail-row">
-                  <span class="project-card__detail-label">Solution</span>
-                  <p>Built an AI-powered assessment platform focusing on Secure Product Design and scalable Software Architecture. The platform generates slightly flawed code so candidates must demonstrate genuine understanding to correct issues.</p>
-                </div>
-                <div class="project-card__detail-row">
-                  <span class="project-card__detail-label">Product Decision</span>
-                  <p>Guided by Product Discovery and structured buyer role-play with HR managers. Chose a GTM strategy of pay-per-assessment → subscription, launching in Egypt with Gulf expansion path.</p>
-                </div>
-                <div class="project-card__detail-row">
-                  <span class="project-card__detail-label">Role</span>
-                  <p>Team Lead &amp; Product Owner — managed prioritized backlog, facilitated Agile and Scrum ceremonies, and drove the Product Strategy balancing technical feasibility with user value.</p>
-                </div>
-                <div class="project-card__detail-row">
-                  <span class="project-card__detail-label">Outcome</span>
-                  <p>Working graduation project with validated market interest. Buyer role-play confirmed willingness to pay among target personas.</p>
-                </div>
-              </div>
-            </details>
-
-            <div class="project-card__tags">
-              <span class="project-card__tag">Product Strategy</span>
-              <span class="project-card__tag">Agile</span>
-              <span class="project-card__tag">User Validation</span>
-              <span class="project-card__tag">GTM Planning</span>
-            </div>
-            <div class="project-card__actions">
-              <a href="mailto:abdelrhman.bin.gamal@gmail.com?subject=AI%20Assessment%20Platform%20—%20Presentation%20Request" class="btn btn--primary btn--small">
-                Request Full Presentation
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- -------- Project 2: Sakn -------- -->
-        <article class="project-card reveal" id="project-sakn">
-          <div class="project-card__visual">
-            <span class="project-card__visual-icon" aria-hidden="true">🏠</span>
-          </div>
-          <div class="project-card__body">
-            <p class="project-card__role">Business Analyst &amp; Product Contributor</p>
-            <h3 class="project-card__title">Sakn</h3>
-            <p class="project-card__desc">
-              <!-- TODO: Add your actual Sakn project description here -->
-              A property/housing solution addressing real pain points in the Egyptian rental and housing market.
-            </p>
-
-            <details class="project-card__details">
-              <summary class="project-card__toggle">
-                <span>View Full Breakdown</span>
-                <svg class="project-card__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </summary>
-              <div class="project-card__expanded">
-                <div class="project-card__detail-row">
-                  <span class="project-card__detail-label">Problem</span>
-                  <!-- TODO: Add your actual problem statement for Sakn -->
-                  <p>The Egyptian rental and housing market lacks transparency and structure, making it difficult for tenants and landlords to find trustworthy matches.</p>
-                </div>
-                <div class="project-card__detail-row">
-                  <span class="project-card__detail-label">Solution</span>
-                  <!-- TODO: Add your actual solution description for Sakn -->
-                  <p>A structured property platform that addresses key pain points in the MENA housing market through better matching and verified listings.</p>
-                </div>
-                <div class="project-card__detail-row">
-                  <span class="project-card__detail-label">Product Decision</span>
-                  <!-- TODO: Add your actual product decision for Sakn -->
-                  <p>Focused on rigorous Business Analysis and PRD/SRS documentation as a case study — translating complex business requirements into structured Product Management artifacts.</p>
-                </div>
-                <div class="project-card__detail-row">
-                  <span class="project-card__detail-label">Role</span>
-                  <p>Business Analyst &amp; Product Contributor — responsible for Requirements Gathering (PRD / SRS) and business process flow mapping.</p>
-                </div>
-                <div class="project-card__detail-row">
-                  <span class="project-card__detail-label">Outcome</span>
-                  <!-- TODO: Add your actual outcome for Sakn -->
-                  <p>Complete PRD/SRS documentation delivered as a product case study.</p>
-                </div>
-              </div>
-            </details>
-
-            <div class="project-card__tags">
-              <span class="project-card__tag">PropTech</span>
-              <span class="project-card__tag">PRD / SRS</span>
-              <span class="project-card__tag">User Research</span>
-            </div>
-            <div class="project-card__actions">
-              <!-- TODO: Add link to project demo or repo -->
-              <a href="#" class="btn btn--outline btn--small">Learn More</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- -------- Project 3: SecurePass Tools -------- -->
-        <article class="project-card reveal" id="project-securepass">
-          <div class="project-card__visual">
-            <span class="project-card__visual-icon" aria-hidden="true">🔐</span>
-          </div>
-          <div class="project-card__body">
-            <p class="project-card__role">Product Owner &amp; Developer</p>
-            <h3 class="project-card__title">SecurePass Tools</h3>
-            <p class="project-card__desc">
-              A privacy-first password security toolkit with regional (Arabic) context awareness — catching patterns that mainstream checkers miss entirely.
-            </p>
-
-            <details class="project-card__details">
-              <summary class="project-card__toggle">
-                <span>View Full Breakdown</span>
-                <svg class="project-card__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </summary>
-              <div class="project-card__expanded">
-                <div class="project-card__detail-row">
-                  <span class="project-card__detail-label">Problem</span>
-                  <p>Most password-strength checkers ignore regional context — they don't flag common Arabic names/patterns (e.g. "Ahmed", "Mohamed") as weak, which is a real security risk in MENA markets. Many tools also compromise privacy by sending passwords to a server for analysis.</p>
-                </div>
-                <div class="project-card__detail-row">
-                  <span class="project-card__detail-label">Solution</span>
-                  <p>Leveraged Cybersecurity fundamentals and Secure Product Design to build a privacy-first, fully client-side password toolkit with region-aware pattern detection plus a memorable passphrase generator.</p>
-                </div>
-                <div class="project-card__detail-row">
-                  <span class="project-card__detail-label">Product Decision</span>
-                  <p>Chose a zero-server, zero-knowledge architecture — trust by design instead of by policy — even though it meant building more detection logic client-side instead of relying on a backend.</p>
-                </div>
-                <div class="project-card__detail-row">
-                  <span class="project-card__detail-label">Role</span>
-                  <p>Product Owner &amp; Developer — defined the Product Strategy, researched regional password patterns, and led the Software Architecture for the client-side implementation.</p>
-                </div>
-                <div class="project-card__detail-row">
-                  <span class="project-card__detail-label">Outcome</span>
-                  <p>Live, functional product — directly usable in the browser with no installation required.</p>
-                </div>
-              </div>
-            </details>
-
-            <div class="project-card__tags">
-              <span class="project-card__tag">Security</span>
-              <span class="project-card__tag">Privacy-First</span>
-              <span class="project-card__tag">MENA Context</span>
-              <span class="project-card__tag">Client-Side</span>
-            </div>
-            <div class="project-card__actions">
-              <a href="https://0xqenawy.github.io/password-checker" class="btn btn--primary btn--small" target="_blank" rel="https://0xqenawy.github.io/password-checker">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Try Live Demo
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- -------- Project 4: Zombie Package Detector -------- -->
-        <article class="project-card reveal" id="project-zombie">
-          <div class="project-card__visual">
-            <span class="project-card__visual-icon" aria-hidden="true">🔍</span>
-          </div>
-          <div class="project-card__body">
-            <p class="project-card__role">Lead Researcher &amp; Developer</p>
-            <h3 class="project-card__title">Zombie Package Detector</h3>
-            <p class="project-card__desc">
-              An automated monitoring tool that tracks dependency health and flags unmaintained packages — product logic applied to a real engineering risk.
-            </p>
-
-            <details class="project-card__details">
-              <summary class="project-card__toggle">
-                <span>View Full Breakdown</span>
-                <svg class="project-card__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </summary>
-              <div class="project-card__expanded">
-                <div class="project-card__detail-row">
-                  <span class="project-card__detail-label">Problem</span>
-                  <p>Third-party dependencies quietly go unmaintained, creating hidden supply-chain risk that teams don't notice until it's too late.</p>
-                </div>
-                <div class="project-card__detail-row">
-                  <span class="project-card__detail-label">Solution</span>
-                  <p>Built an automated monitoring tool applying Cybersecurity best practices to track dependency health and flag unmaintained packages before they become a liability.</p>
-                </div>
-                <div class="project-card__detail-row">
-                  <span class="project-card__detail-label">Product Decision</span>
-                  <p>Prioritized proactive risk detection over reactive fixing — surfacing problems early rather than waiting for incidents to force action, demonstrating strong Product Management.</p>
-                </div>
-                <div class="project-card__detail-row">
-                  <span class="project-card__detail-label">Role</span>
-                  <p>Lead Researcher &amp; Developer — researched supply-chain risk patterns, defined detection heuristics, and built the CLI tool, showcasing a strong technical foundation in Software Architecture.</p>
-                </div>
-                <div class="project-card__detail-row">
-                  <span class="project-card__detail-label">Outcome</span>
-                  <p>Functional CLI tool — demonstrates technical execution combined with product/risk thinking.</p>
-                </div>
-              </div>
-            </details>
-
-            <div class="project-card__tags">
-              <span class="project-card__tag">DevOps Tooling</span>
-              <span class="project-card__tag">Risk Analysis</span>
-              <span class="project-card__tag">Supply Chain</span>
-            </div>
-            <div class="project-card__actions">
-              <a href="https://github.com/0xQenawy/zombie-package-detector" class="btn btn--outline btn--small">View on GitHub</a>
-            </div>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
   <!-- ===================== CONTACT ===================== -->
-  <section id="contact" class="section">
+  <section id="contact" class="section section--alt">
     <div class="section__inner">
       <div class="contact__inner">
         <span class="section__label reveal">Contact</span>
@@ -708,7 +579,7 @@
 
         <p class="contact__location reveal">
           <svg class="lucide lucide-map-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
-          Egypt&ensp;|&ensp;Open to Remote &amp; Hybrid Opportunities
+          Cairo, Egypt<span class="contact__sep" aria-hidden="true">&ensp;|&ensp;</span><span class="contact__open">Open to Remote &amp; Hybrid Opportunities</span>
         </p>
       </div>
     </div>
